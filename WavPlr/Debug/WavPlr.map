@@ -1,0 +1,675 @@
+Archive member included because of file (symbol)
+
+../../Lib_CMSISv1p30_LPC17xx/Debug\libLib_CMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+                              ./src/cr_startup_lpc17.o (SystemInit)
+../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_dac.o)
+                              ./src/main.o (DAC_Init)
+../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+                              ./src/main.o (GPIO_SetDir)
+../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+                              ./src/main.o (PINSEL_ConfigPin)
+../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_timer.o)
+                              ./src/main.o (Timer0_us_Wait)
+../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+                              ./src/main.o (UART_Init)
+../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+                              ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_timer.o) (CLKPWR_SetPCLKDiv)
+c:/nxp/lpcxpresso_6.1.4_194/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strlen.o)
+                              ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o) (strlen)
+c:/nxp/lpcxpresso_6.1.4_194/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(division.o)
+                              ../../Lib_CMSISv1p30_LPC17xx/Debug\libLib_CMSISv1p30_LPC17xx.a(system_LPC17xx.o) (__aeabi_uldivmod)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 ./src/cr_startup_lpc17.o
+ .data          0x00000000        0x0 ./src/cr_startup_lpc17.o
+ .bss           0x00000000        0x0 ./src/cr_startup_lpc17.o
+ .text          0x00000000        0x0 ./src/main.o
+ .data          0x00000000        0x0 ./src/main.o
+ .bss           0x00000000        0x0 ./src/main.o
+ .text          0x00000000        0x0 ./src/sound.o
+ .bss           0x00000000        0x0 ./src/sound.o
+ .text          0x00000000        0x0 ../../Lib_CMSISv1p30_LPC17xx/Debug\libLib_CMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .bss           0x00000000        0x0 ../../Lib_CMSISv1p30_LPC17xx/Debug\libLib_CMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .text.SystemCoreClockUpdate
+                0x00000000      0x2d0 ../../Lib_CMSISv1p30_LPC17xx/Debug\libLib_CMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .text          0x00000000        0x0 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_dac.o)
+ .data          0x00000000        0x0 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_dac.o)
+ .bss           0x00000000        0x0 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_dac.o)
+ .text.DAC_ConfigDAConverterControl
+                0x00000000       0x78 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_dac.o)
+ .text.DAC_SetDMATimeOut
+                0x00000000       0x38 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_dac.o)
+ .text          0x00000000        0x0 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .data          0x00000000        0x0 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .bss           0x00000000        0x0 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_HalfWordGetPointer
+                0x00000000       0x7c ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_ByteGetPointer
+                0x00000000       0x7c ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.GPIO_SetValue
+                0x00000000       0x2c ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.GPIO_ReadValue
+                0x00000000       0x30 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.GPIO_IntCmd
+                0x00000000       0x84 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.GPIO_GetIntStatus
+                0x00000000       0xc0 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.GPIO_ClearInt
+                0x00000000       0x40 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_SetDir
+                0x00000000       0x28 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_SetValue
+                0x00000000       0x20 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_ClearValue
+                0x00000000       0x20 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_ReadValue
+                0x00000000       0x20 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_IntCmd
+                0x00000000       0x28 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_GetIntStatus
+                0x00000000       0x2c ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_ClearInt
+                0x00000000       0x20 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_SetMask
+                0x00000000       0x54 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_HalfWordSetDir
+                0x00000000       0x94 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_HalfWordSetMask
+                0x00000000       0x94 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_HalfWordSetValue
+                0x00000000       0x40 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_HalfWordClearValue
+                0x00000000       0x40 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_HalfWordReadValue
+                0x00000000       0x44 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_ByteSetDir
+                0x00000000       0x70 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_ByteSetMask
+                0x00000000       0x78 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_ByteSetValue
+                0x00000000       0x3c ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_ByteClearValue
+                0x00000000       0x3c ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_ByteReadValue
+                0x00000000       0x40 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text          0x00000000        0x0 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .data          0x00000000        0x0 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .bss           0x00000000        0x0 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .text.PINSEL_ConfigTraceFunc
+                0x00000000       0x54 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .text.PINSEL_SetI2C0Pins
+                0x00000000       0x3c ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .text          0x00000000        0x0 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .data          0x00000000        0x0 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .bss           0x00000000        0x0 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .text.TIM_GetIntCaptureStatus
+                0x00000000       0xb8 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .text.TIM_ClearIntCapturePending
+                0x00000000       0xa0 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .text.TIM_ConfigStructInit
+                0x00000000       0x40 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .text.TIM_DeInit
+                0x00000000       0xc4 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .text.TIM_ResetCounter
+                0x00000000       0x6c ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .text.TIM_UpdateMatchValue
+                0x00000000       0x98 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .text.TIM_ConfigCapture
+                0x00000000      0x108 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .text.TIM_GetCaptureValue
+                0x00000000       0x84 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .text.Timer0_Wait
+                0x00000000       0x8c ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .text          0x00000000        0x0 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .data          0x00000000        0x0 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .bss           0x00000000        0x0 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_DeInit
+                0x00000000       0xcc ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_ConfigStructInit
+                0x00000000       0x34 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_ReceiveByte
+                0x00000000       0x78 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_Receive
+                0x00000000       0xd8 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_ForceBreak
+                0x00000000       0x88 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_IntConfig
+                0x00000000      0x1c8 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_GetLineStatus
+                0x00000000       0x7c ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_GetIntId
+                0x00000000       0x68 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_CheckBusy
+                0x00000000       0x2c ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_FIFOConfig
+                0x00000000      0x184 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_FIFOConfigStructInit
+                0x00000000       0x34 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_ABCmd
+                0x00000000      0x15c ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_ABClearIntPending
+                0x00000000       0x88 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_IrDAInvtInputCmd
+                0x00000000       0x84 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_IrDACmd
+                0x00000000       0x80 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_IrDAPulseDivConfig
+                0x00000000       0xa8 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_FullModemForcePinState
+                0x00000000       0xcc ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_FullModemConfigMode
+                0x00000000       0xd4 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_FullModemGetStatus
+                0x00000000       0x38 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_RS485Config
+                0x00000000      0x1bc ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_RS485ReceiverCmd
+                0x00000000       0x48 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_RS485Send
+                0x00000000       0x84 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_RS485SendSlvAddr
+                0x00000000       0x28 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_RS485SendData
+                0x00000000       0x28 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text          0x00000000        0x0 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .data          0x00000000        0x0 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .bss           0x00000000        0x0 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .text.__WFI    0x00000000        0xc ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .text.CLKPWR_Sleep
+                0x00000000       0x1c ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .text.CLKPWR_DeepSleep
+                0x00000000       0x28 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .text.CLKPWR_PowerDown
+                0x00000000       0x28 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .text.CLKPWR_DeepPowerDown
+                0x00000000       0x28 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_6.1.4_194/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strlen.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_6.1.4_194/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strlen.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_6.1.4_194/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strlen.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_6.1.4_194/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(division.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_6.1.4_194/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(division.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_6.1.4_194/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_idiv
+                0x00000000       0x10 c:/nxp/lpcxpresso_6.1.4_194/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_idivmod
+                0x00000000       0x16 c:/nxp/lpcxpresso_6.1.4_194/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_uidiv
+                0x00000000       0x10 c:/nxp/lpcxpresso_6.1.4_194/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_uidivmod
+                0x00000000       0x16 c:/nxp/lpcxpresso_6.1.4_194/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_ldivmod
+                0x00000000       0x26 c:/nxp/lpcxpresso_6.1.4_194/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_ldiv0
+                0x00000000        0x2 c:/nxp/lpcxpresso_6.1.4_194/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(division.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+MFlash512        0x00000000         0x00080000         xr
+RamLoc32         0x10000000         0x00008000         xrw
+RamAHB32         0x2007c000         0x00008000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./src/cr_startup_lpc17.o
+LOAD ./src/main.o
+LOAD ./src/sound.o
+LOAD ../../Lib_CMSISv1p30_LPC17xx/Debug\libLib_CMSISv1p30_LPC17xx.a
+LOAD ../../Lib_EaBaseBoard/Debug\libLib_EaBaseBoard.a
+LOAD ../../Lib_MCU/Debug\libLib_MCU.a
+START GROUP
+LOAD c:/nxp/lpcxpresso_6.1.4_194/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a
+LOAD c:/nxp/lpcxpresso_6.1.4_194/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a
+LOAD c:/nxp/lpcxpresso_6.1.4_194/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a
+END GROUP
+                0x00080000                __top_MFlash512 = 0x80000
+                0x10008000                __top_RamLoc32 = 0x10008000
+                0x20084000                __top_RamAHB32 = 0x20084000
+
+.text           0x00000000     0x8eec
+ FILL mask 0xff
+                0x00000000                __vectors_start__ = ABSOLUTE (.)
+ *(.isr_vector)
+ .isr_vector    0x00000000       0xcc ./src/cr_startup_lpc17.o
+                0x00000000                g_pfnVectors
+                0x000000cc                . = ALIGN (0x4)
+                0x000000cc                __section_table_start = .
+                0x000000cc                __data_section_table = .
+                0x000000cc        0x4 LONG 0x8eec LOADADDR (.data)
+                0x000000d0        0x4 LONG 0x10000000 ADDR (.data)
+                0x000000d4        0x4 LONG 0x8 SIZEOF (.data)
+                0x000000d8        0x4 LONG 0x8eec LOADADDR (.data_RAM2)
+                0x000000dc        0x4 LONG 0x2007c000 ADDR (.data_RAM2)
+                0x000000e0        0x4 LONG 0x0 SIZEOF (.data_RAM2)
+                0x000000e4                __data_section_table_end = .
+                0x000000e4                __bss_section_table = .
+                0x000000e4        0x4 LONG 0x10000008 ADDR (.bss)
+                0x000000e8        0x4 LONG 0x0 SIZEOF (.bss)
+                0x000000ec        0x4 LONG 0x2007c000 ADDR (.bss_RAM2)
+                0x000000f0        0x4 LONG 0x0 SIZEOF (.bss_RAM2)
+                0x000000f4                __bss_section_table_end = .
+                0x000000f4                __section_table_end = .
+ *(.after_vectors*)
+ *(.text*)
+ .text.ResetISR
+                0x000000f4       0x68 ./src/cr_startup_lpc17.o
+                0x000000f4                ResetISR
+ .text.NMI_Handler
+                0x0000015c        0x8 ./src/cr_startup_lpc17.o
+                0x0000015c                NMI_Handler
+ .text.HardFault_Handler
+                0x00000164        0x8 ./src/cr_startup_lpc17.o
+                0x00000164                HardFault_Handler
+ .text.MemManage_Handler
+                0x0000016c        0x8 ./src/cr_startup_lpc17.o
+                0x0000016c                MemManage_Handler
+ .text.BusFault_Handler
+                0x00000174        0x8 ./src/cr_startup_lpc17.o
+                0x00000174                BusFault_Handler
+ .text.UsageFault_Handler
+                0x0000017c        0x8 ./src/cr_startup_lpc17.o
+                0x0000017c                UsageFault_Handler
+ .text.SVCall_Handler
+                0x00000184        0x8 ./src/cr_startup_lpc17.o
+                0x00000184                SVCall_Handler
+ .text.DebugMon_Handler
+                0x0000018c        0x8 ./src/cr_startup_lpc17.o
+                0x0000018c                DebugMon_Handler
+ .text.PendSV_Handler
+                0x00000194        0x8 ./src/cr_startup_lpc17.o
+                0x00000194                PendSV_Handler
+ .text.SysTick_Handler
+                0x0000019c        0x8 ./src/cr_startup_lpc17.o
+                0x0000019c                SysTick_Handler
+ .text.IntDefaultHandler
+                0x000001a4        0x8 ./src/cr_startup_lpc17.o
+                0x000001a4                TIMER2_IRQHandler
+                0x000001a4                RIT_IRQHandler
+                0x000001a4                I2C0_IRQHandler
+                0x000001a4                USBActivity_IRQHandler
+                0x000001a4                PWM1_IRQHandler
+                0x000001a4                I2C1_IRQHandler
+                0x000001a4                EINT2_IRQHandler
+                0x000001a4                UART1_IRQHandler
+                0x000001a4                EINT3_IRQHandler
+                0x000001a4                CANActivity_IRQHandler
+                0x000001a4                TIMER3_IRQHandler
+                0x000001a4                UART0_IRQHandler
+                0x000001a4                IntDefaultHandler
+                0x000001a4                PLL0_IRQHandler
+                0x000001a4                CAN_IRQHandler
+                0x000001a4                PLL1_IRQHandler
+                0x000001a4                SSP0_IRQHandler
+                0x000001a4                I2S_IRQHandler
+                0x000001a4                I2C2_IRQHandler
+                0x000001a4                RTC_IRQHandler
+                0x000001a4                TIMER0_IRQHandler
+                0x000001a4                SPI_IRQHandler
+                0x000001a4                EINT1_IRQHandler
+                0x000001a4                TIMER1_IRQHandler
+                0x000001a4                UART2_IRQHandler
+                0x000001a4                ADC_IRQHandler
+                0x000001a4                SSP1_IRQHandler
+                0x000001a4                USB_IRQHandler
+                0x000001a4                BOD_IRQHandler
+                0x000001a4                WDT_IRQHandler
+                0x000001a4                QEI_IRQHandler
+                0x000001a4                EINT0_IRQHandler
+                0x000001a4                DMA_IRQHandler
+                0x000001a4                UART3_IRQHandler
+                0x000001a4                MCPWM_IRQHandler
+                0x000001a4                ENET_IRQHandler
+ .text.init_uart
+                0x000001ac       0x74 ./src/main.o
+ .text.main     0x00000220      0x3a0 ./src/main.o
+                0x00000220                main
+ .text.check_failed
+                0x000005c0        0xc ./src/main.o
+                0x000005c0                check_failed
+ .text.SystemInit
+                0x000005cc      0x22c ../../Lib_CMSISv1p30_LPC17xx/Debug\libLib_CMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+                0x000005cc                SystemInit
+ .text.DAC_Init
+                0x000007f8       0x40 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_dac.o)
+                0x000007f8                DAC_Init
+ .text.DAC_UpdateValue
+                0x00000838       0x54 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_dac.o)
+                0x00000838                DAC_UpdateValue
+ .text.DAC_SetBias
+                0x0000088c       0x4c ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_dac.o)
+                0x0000088c                DAC_SetBias
+ .text.GPIO_GetPointer
+                0x000008d8       0x7c ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.GPIO_SetDir
+                0x00000954       0x54 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+                0x00000954                GPIO_SetDir
+ .text.GPIO_ClearValue
+                0x000009a8       0x2c ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+                0x000009a8                GPIO_ClearValue
+ .text.set_PinFunc
+                0x000009d4       0x9c ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .text.set_ResistorMode
+                0x00000a70       0x9c ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .text.set_OpenDrainMode
+                0x00000b0c       0x7c ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .text.PINSEL_ConfigPin
+                0x00000b88       0x54 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+                0x00000b88                PINSEL_ConfigPin
+ .text.getPClock
+                0x00000bdc       0x68 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .text.converUSecToVal
+                0x00000c44       0x64 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .text.converPtrToTimeNum
+                0x00000ca8       0x6c ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .text.TIM_GetIntStatus
+                0x00000d14       0xb4 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_timer.o)
+                0x00000d14                TIM_GetIntStatus
+ .text.TIM_ClearIntPending
+                0x00000dc8       0x9c ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_timer.o)
+                0x00000dc8                TIM_ClearIntPending
+ .text.TIM_Init
+                0x00000e64      0x1cc ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_timer.o)
+                0x00000e64                TIM_Init
+ .text.TIM_Cmd  0x00001030       0x78 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_timer.o)
+                0x00001030                TIM_Cmd
+ .text.TIM_ConfigMatch
+                0x000010a8      0x1cc ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_timer.o)
+                0x000010a8                TIM_ConfigMatch
+ .text.Timer0_us_Wait
+                0x00001274       0x8c ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_timer.o)
+                0x00001274                Timer0_us_Wait
+ .text.uart_set_divisors
+                0x00001300      0x30c ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_Init
+                0x0000160c      0x368 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+                0x0000160c                UART_Init
+ .text.UART_SendByte
+                0x00001974       0x78 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+                0x00001974                UART_SendByte
+ .text.UART_Send
+                0x000019ec      0x10c ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+                0x000019ec                UART_Send
+ .text.UART_TxCmd
+                0x00001af8       0xe8 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+                0x00001af8                UART_TxCmd
+ .text.UART_SendString
+                0x00001be0       0x2c ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+                0x00001be0                UART_SendString
+ .text.CLKPWR_SetPCLKDiv
+                0x00001c0c       0xcc ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+                0x00001c0c                CLKPWR_SetPCLKDiv
+ .text.CLKPWR_GetPCLKSEL
+                0x00001cd8       0x54 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+                0x00001cd8                CLKPWR_GetPCLKSEL
+ .text.CLKPWR_GetPCLK
+                0x00001d2c       0x74 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+                0x00001d2c                CLKPWR_GetPCLK
+ .text.CLKPWR_ConfigPPWR
+                0x00001da0       0x78 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+                0x00001da0                CLKPWR_ConfigPPWR
+ .text.strlen   0x00001e18       0x4c c:/nxp/lpcxpresso_6.1.4_194/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strlen.o)
+                0x00001e18                strlen
+ .text.__aeabi_division_uldivmod
+                0x00001e64      0x174 c:/nxp/lpcxpresso_6.1.4_194/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(division.o)
+                0x00001e64                __aeabi_uldivmod
+                0x00001e68                __bhs_ldivmod1
+ .text.__aeabi_division_idiv0
+                0x00001fd8        0x2 c:/nxp/lpcxpresso_6.1.4_194/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(division.o)
+                0x00001fd8                __aeabi_idiv0
+ *(.rodata .rodata.* .constdata .constdata.*)
+ *fill*         0x00001fda        0x2 00
+ .rodata        0x00001fdc       0x68 ./src/main.o
+ .rodata        0x00002044     0x6e60 ./src/sound.o
+                0x00002044                sound_8k
+ .rodata        0x00008ea4       0x18 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_dac.o)
+ .rodata        0x00008ebc       0x18 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .rodata        0x00008ed4       0x18 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+                0x00008eec                . = ALIGN (0x4)
+
+.glue_7         0x00008eec        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x00008eec        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x00008eec        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x00008eec        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x00008eec                __exidx_start = .
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x00008eec                __exidx_end = .
+                0x00008eec                _etext = .
+
+.data_RAM2      0x2007c000        0x0 load address 0x00008eec
+ FILL mask 0xff
+ *(.data.$RAM2*)
+ *(.data.$RamAHB32*)
+                0x2007c000                . = ALIGN (0x4)
+
+.uninit_RESERVED
+                0x10000000        0x0
+ *(.bss.$RESERVED*)
+                0x10000000                . = ALIGN (0x4)
+                0x10000000                _end_uninit_RESERVED = .
+
+.data           0x10000000        0x8 load address 0x00008eec
+ FILL mask 0xff
+                0x10000000                _data = .
+ *(vtable)
+ *(.data*)
+ .data          0x10000000        0x4 ./src/sound.o
+                0x10000000                sound_sz
+ .data          0x10000004        0x4 ../../Lib_CMSISv1p30_LPC17xx/Debug\libLib_CMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+                0x10000004                SystemCoreClock
+                0x10000008                . = ALIGN (0x4)
+                0x10000008                _edata = .
+
+.bss_RAM2       0x2007c000        0x0
+ *(.bss.$RAM2*)
+ *(.bss.$RamAHB32*)
+                0x2007c000                . = ALIGN (0x4)
+
+.bss            0x10000008        0x0
+                0x10000008                _bss = .
+ *(.bss*)
+ *(COMMON)
+                0x10000008                . = ALIGN (0x4)
+                0x10000008                _ebss = .
+                0x10000008                PROVIDE (end, .)
+
+.noinit_RAM2    0x2007c000        0x0
+ *(.noinit.$RAM2*)
+ *(.noinit.$RamAHB32*)
+                0x2007c000                . = ALIGN (0x4)
+
+.noinit         0x10000008        0x0
+                0x10000008                _noinit = .
+ *(.noinit*)
+                0x10000008                . = ALIGN (0x4)
+                0x10000008                _end_noinit = .
+                0x10000008                PROVIDE (_pvHeapStart, .)
+                0x10008000                PROVIDE (_vStackTop, (__top_RamLoc32 - 0x0))
+OUTPUT(WavPlr.axf elf32-littlearm)
+
+.debug_info     0x00000000     0x42f3
+ .debug_info    0x00000000      0x209 ./src/cr_startup_lpc17.o
+ .debug_info    0x00000209      0x52a ./src/main.o
+ .debug_info    0x00000733       0x8c ./src/sound.o
+ .debug_info    0x000007bf      0x357 ../../Lib_CMSISv1p30_LPC17xx/Debug\libLib_CMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .debug_info    0x00000b16      0x285 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_dac.o)
+ .debug_info    0x00000d9b      0xe1a ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_info    0x00001bb5      0x4ae ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_info    0x00002063      0x930 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_info    0x00002993     0x131f ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .debug_info    0x00003cb2      0x641 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+
+.debug_abbrev   0x00000000      0xc77
+ .debug_abbrev  0x00000000       0xb4 ./src/cr_startup_lpc17.o
+ .debug_abbrev  0x000000b4      0x1a4 ./src/main.o
+ .debug_abbrev  0x00000258       0x78 ./src/sound.o
+ .debug_abbrev  0x000002d0       0xce ../../Lib_CMSISv1p30_LPC17xx/Debug\libLib_CMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .debug_abbrev  0x0000039e       0xec ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_dac.o)
+ .debug_abbrev  0x0000048a      0x1be ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_abbrev  0x00000648      0x11f ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_abbrev  0x00000767      0x1b6 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_abbrev  0x0000091d      0x1e6 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .debug_abbrev  0x00000b03      0x174 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+
+.debug_loc      0x00000000     0x17b6
+ .debug_loc     0x00000000      0x1f0 ./src/cr_startup_lpc17.o
+ .debug_loc     0x000001f0       0xa8 ./src/main.o
+ .debug_loc     0x00000298       0x58 ../../Lib_CMSISv1p30_LPC17xx/Debug\libLib_CMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .debug_loc     0x000002f0      0x118 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_dac.o)
+ .debug_loc     0x00000408      0x620 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_loc     0x00000a28      0x150 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_loc     0x00000b78      0x3f0 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_loc     0x00000f68      0x692 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .debug_loc     0x000015fa      0x1bc ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+
+.debug_aranges  0x00000000      0x458
+ .debug_aranges
+                0x00000000       0x70 ./src/cr_startup_lpc17.o
+ .debug_aranges
+                0x00000070       0x30 ./src/main.o
+ .debug_aranges
+                0x000000a0       0x28 ../../Lib_CMSISv1p30_LPC17xx/Debug\libLib_CMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .debug_aranges
+                0x000000c8       0x40 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_dac.o)
+ .debug_aranges
+                0x00000108       0xf8 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_aranges
+                0x00000200       0x48 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_aranges
+                0x00000248       0xa8 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_aranges
+                0x000002f0      0x108 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .debug_aranges
+                0x000003f8       0x60 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+
+.debug_ranges   0x00000000      0x3c8
+ .debug_ranges  0x00000000       0x60 ./src/cr_startup_lpc17.o
+ .debug_ranges  0x00000060       0x20 ./src/main.o
+ .debug_ranges  0x00000080       0x18 ../../Lib_CMSISv1p30_LPC17xx/Debug\libLib_CMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .debug_ranges  0x00000098       0x30 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_dac.o)
+ .debug_ranges  0x000000c8       0xe8 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_ranges  0x000001b0       0x38 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_ranges  0x000001e8       0x98 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_ranges  0x00000280       0xf8 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .debug_ranges  0x00000378       0x50 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+
+.debug_line     0x00000000     0x3048
+ .debug_line    0x00000000      0x341 ./src/cr_startup_lpc17.o
+ .debug_line    0x00000341      0x39e ./src/main.o
+ .debug_line    0x000006df       0x2f ./src/sound.o
+ .debug_line    0x0000070e      0x3e0 ../../Lib_CMSISv1p30_LPC17xx/Debug\libLib_CMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .debug_line    0x00000aee      0x43d ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_dac.o)
+ .debug_line    0x00000f2b      0x654 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_line    0x0000157f      0x40f ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_line    0x0000198e      0x77d ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_line    0x0000210b      0xacd ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .debug_line    0x00002bd8      0x470 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+
+.debug_macinfo  0x00000000    0x50164
+ .debug_macinfo
+                0x00000000     0x2c15 ./src/cr_startup_lpc17.o
+ .debug_macinfo
+                0x00002c15     0x9bc4 ./src/main.o
+ .debug_macinfo
+                0x0000c7d9     0x22a9 ./src/sound.o
+ .debug_macinfo
+                0x0000ea82     0x83f8 ../../Lib_CMSISv1p30_LPC17xx/Debug\libLib_CMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .debug_macinfo
+                0x00016e7a     0x9955 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_dac.o)
+ .debug_macinfo
+                0x000207cf     0x86b4 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_macinfo
+                0x00028e83     0x87d1 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_macinfo
+                0x00031654     0xa4ce ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_macinfo
+                0x0003bb22     0xb04c ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .debug_macinfo
+                0x00046b6e     0x95f6 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+
+.debug_str      0x00000000     0x1ae1
+ .debug_str     0x00000000      0x1b4 ./src/cr_startup_lpc17.o
+                                0x1e8 (size before relaxing)
+ .debug_str     0x000001b4      0x26f ./src/main.o
+                                0x364 (size before relaxing)
+ .debug_str     0x00000423        0xf ./src/sound.o
+                                 0xa8 (size before relaxing)
+ .debug_str     0x00000432      0x16e ../../Lib_CMSISv1p30_LPC17xx/Debug\libLib_CMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+                                0x285 (size before relaxing)
+ .debug_str     0x000005a0      0x12b ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_dac.o)
+                                0x240 (size before relaxing)
+ .debug_str     0x000006cb      0x434 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+                                0x569 (size before relaxing)
+ .debug_str     0x00000aff      0x20b ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+                                0x37d (size before relaxing)
+ .debug_str     0x00000d0a      0x481 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_timer.o)
+                                0x5d6 (size before relaxing)
+ .debug_str     0x0000118b      0x83d ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+                                0xb40 (size before relaxing)
+ .debug_str     0x000019c8      0x119 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+                                0x38b (size before relaxing)
+
+.comment        0x00000000       0x70
+ .comment       0x00000000       0x70 ./src/cr_startup_lpc17.o
+                                 0x71 (size before relaxing)
+ .comment       0x00000000       0x71 ./src/main.o
+ .comment       0x00000000       0x71 ./src/sound.o
+ .comment       0x00000000       0x71 ../../Lib_CMSISv1p30_LPC17xx/Debug\libLib_CMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .comment       0x00000000       0x71 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_dac.o)
+ .comment       0x00000000       0x71 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .comment       0x00000000       0x71 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .comment       0x00000000       0x71 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .comment       0x00000000       0x71 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .comment       0x00000000       0x71 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .comment       0x00000000       0x71 c:/nxp/lpcxpresso_6.1.4_194/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strlen.o)
+
+.ARM.attributes
+                0x00000000       0x31
+ .ARM.attributes
+                0x00000000       0x33 ./src/cr_startup_lpc17.o
+ .ARM.attributes
+                0x00000033       0x33 ./src/main.o
+ .ARM.attributes
+                0x00000066       0x33 ./src/sound.o
+ .ARM.attributes
+                0x00000099       0x33 ../../Lib_CMSISv1p30_LPC17xx/Debug\libLib_CMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .ARM.attributes
+                0x000000cc       0x33 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_dac.o)
+ .ARM.attributes
+                0x000000ff       0x33 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .ARM.attributes
+                0x00000132       0x33 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .ARM.attributes
+                0x00000165       0x33 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .ARM.attributes
+                0x00000198       0x33 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .ARM.attributes
+                0x000001cb       0x33 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .ARM.attributes
+                0x000001fe       0x33 c:/nxp/lpcxpresso_6.1.4_194/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strlen.o)
+ .ARM.attributes
+                0x00000231       0x21 c:/nxp/lpcxpresso_6.1.4_194/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m\libcr_eabihelpers.a(division.o)
+
+.debug_frame    0x00000000      0xdd8
+ .debug_frame   0x00000000      0x120 ./src/cr_startup_lpc17.o
+ .debug_frame   0x00000120       0x6c ./src/main.o
+ .debug_frame   0x0000018c       0x48 ../../Lib_CMSISv1p30_LPC17xx/Debug\libLib_CMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .debug_frame   0x000001d4       0xb0 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_dac.o)
+ .debug_frame   0x00000284      0x378 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_frame   0x000005fc       0xbc ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_frame   0x000006b8      0x248 ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_frame   0x00000900      0x3cc ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .debug_frame   0x00000ccc      0x10c ../../Lib_MCU/Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
