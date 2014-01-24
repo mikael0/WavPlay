@@ -1,16 +1,33 @@
 
-#include "lpc17xx_pinsel.h"
+#include "lpc17xx_pinsel.h" //headers from Lib_MCU
 #include "lpc17xx_gpio.h"
 #include "lpc17xx_uart.h"
 #include "lpc17xx_dac.h"
 #include "lpc17xx_timer.h"
-#include "../inc/commands.h"
+#include "commands.h" //header with commands enum
 
 
 extern const unsigned char sound_8k[]; //wav array
 extern int sound_sz; //it's size
 
+volatile command cmd = 0; //command
+volatile uint8_t pause = 0;
+
 #define UART_DEV LPC_UART3
+
+void UART3_IRQHandler(void) //Uart3 interrupt
+{
+	cmd = UART_ReceiveByte(UART_DEV); //command selection
+	switch (cmd)
+	{
+	        		case PAUSE_CMD : pause = 1; //pause
+	        				  break;
+	        		case RESUME_CMD : pause = 0; //resume
+	        				  break;
+	        		case QUIT_CMD : break;
+	        		default: UART_SendString(UART_DEV,(uint8_t *)"Invalid command!\r\n");
+	}
+}
 
 static void init_uart(void)
 {
@@ -31,6 +48,11 @@ static void init_uart(void)
 	uartCfg.Stopbits = UART_STOPBIT_1;
 
 	UART_Init(UART_DEV, &uartCfg);
+
+	NVIC_EnableIRQ(UART3_IRQn); //enable interrupt
+
+	UART_IntConfig(UART_DEV, UART_INTCFG_RLS, ENABLE); 
+	UART_IntConfig(UART_DEV, UART_INTCFG_RBR, ENABLE);
 
 	UART_TxCmd(UART_DEV, ENABLE);
 
@@ -81,8 +103,8 @@ int main (void)
     uint32_t off = 0;
     uint32_t sampleRate = 0;
     uint32_t delay = 0;
-    uint8_t pause = 0;
-    command cmd = 0;
+   // uint8_t pause = 0;
+    //command cmd = 0;
 
     /*initialize periphery*/
     init_GPIO();
@@ -149,30 +171,22 @@ int main (void)
     /* skip chunk size */
     cnt += 4;
 
-    off = cnt;
+    off = cnt; //set offset to the beginning of the wave
 
     while(1) //infinite loop
     {
         cnt = off;
         while(cnt++ < sound_sz)
         {
-        	cmd = UART_ReceiveByte(UART_DEV); //command selection
-        	switch (cmd)
-        	{
-        		case PAUSE_CMD : pause = 1; //pause
-        				  break;
-        		case RESUME_CMD : pause = 0; //resume
-        				  break;
-        		case QUIT_CMD : return 0; //quit
-        	}
         	if (!pause)
         	{
-				DAC_UpdateValue ( LPC_DAC,(uint32_t)(sound_8k[cnt]));
+				DAC_UpdateValue( LPC_DAC,(uint32_t)(sound_8k[cnt])); //update DAC value 
 				Timer0_us_Wait(delay);
         	}
+        	if (cmd == QUIT_CMD)
+        		return 0;
         }
     }
-
     return 0 ;
 }
 
