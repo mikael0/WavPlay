@@ -6,17 +6,17 @@
 C_SRCS += \
 ../src/cr_startup_lpc17.c \
 ../src/main.c \
-../src/sound.c 
+../src/petushok.c 
 
 OBJS += \
 ./src/cr_startup_lpc17.o \
 ./src/main.o \
-./src/sound.o 
+./src/petushok.o 
 
 C_DEPS += \
 ./src/cr_startup_lpc17.d \
 ./src/main.d \
-./src/sound.d 
+./src/petushok.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

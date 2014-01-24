@@ -4,11 +4,11 @@
 #include "lpc17xx_uart.h"
 #include "lpc17xx_dac.h"
 #include "lpc17xx_timer.h"
-
+#include "../inc/commands.h"
 
 
 extern const unsigned char sound_8k[]; //wav array
-extern int sound_sz;//it's size
+extern int sound_sz; //it's size
 
 #define UART_DEV LPC_UART3
 
@@ -36,45 +36,57 @@ static void init_uart(void)
 
 }
 
+static void init_GPIO(void)
+{
+	 /*initialize GPIO*/
+	    GPIO_SetDir(2, 1<<0, 1);
+	    GPIO_SetDir(2, 1<<1, 1);
+
+	    GPIO_SetDir(0, 1<<27, 1);
+	    GPIO_SetDir(0, 1<<28, 1);
+	    GPIO_SetDir(2, 1<<13, 1);
+	    GPIO_SetDir(0, 1<<26, 1);
+
+	    GPIO_ClearValue(0, 1<<27); //LM4811-clk
+	    GPIO_ClearValue(0, 1<<28); //LM4811-up/dn
+	    GPIO_ClearValue(2, 1<<13); //LM4811-shutdn
+}
+
+static void init_DAC(void)
+{
+
+		PINSEL_CFG_Type PinCfg;
+	/*
+		 * Init DAC pin connect
+		 * AOUT on P0.26
+		 */
+		PinCfg.Funcnum = 2;
+		PinCfg.OpenDrain = 0;
+		PinCfg.Pinmode = 0;
+		PinCfg.Pinnum = 26;
+		PinCfg.Portnum = 0;
+		PINSEL_ConfigPin(&PinCfg);
+
+		/* init DAC structure to default
+		 * First value to AOUT is 0
+		 */
+		DAC_Init(LPC_DAC);
+}
+
 
 int main (void)
 {
-	PINSEL_CFG_Type PinCfg;
 
     uint32_t cnt = 0;
     uint32_t off = 0;
     uint32_t sampleRate = 0;
     uint32_t delay = 0;
+    uint8_t pause = 0;
+    command cmd = 0;
 
-    /*initialize GPIO*/
-    GPIO_SetDir(2, 1<<0, 1);
-    GPIO_SetDir(2, 1<<1, 1);
-
-    GPIO_SetDir(0, 1<<27, 1);
-    GPIO_SetDir(0, 1<<28, 1);
-    GPIO_SetDir(2, 1<<13, 1);
-    GPIO_SetDir(0, 1<<26, 1);
-
-    GPIO_ClearValue(0, 1<<27); //LM4811-clk
-    GPIO_ClearValue(0, 1<<28); //LM4811-up/dn
-    GPIO_ClearValue(2, 1<<13); //LM4811-shutdn
-
-	/*
-	 * Init DAC pin connect
-	 * AOUT on P0.26
-	 */
-	PinCfg.Funcnum = 2;
-	PinCfg.OpenDrain = 0;
-	PinCfg.Pinmode = 0;
-	PinCfg.Pinnum = 26;
-	PinCfg.Portnum = 0;
-	PINSEL_ConfigPin(&PinCfg);
-
-	/* init DAC structure to default
-	 * First value to AOUT is 0
-	 */
-	DAC_Init(LPC_DAC);
-
+    /*initialize periphery*/
+    init_GPIO();
+    init_DAC();
     init_uart();
 
     /* ChunkID */
@@ -144,13 +156,27 @@ int main (void)
         cnt = off;
         while(cnt++ < sound_sz)
         {
-        	DAC_UpdateValue ( LPC_DAC,(uint32_t)(sound_8k[cnt]));
-        	Timer0_us_Wait(delay);
+        	cmd = UART_ReceiveByte(UART_DEV); //command selection
+        	switch (cmd)
+        	{
+        		case PAUSE_CMD : pause = 1; //pause
+        				  break;
+        		case RESUME_CMD : pause = 0; //resume
+        				  break;
+        		case QUIT_CMD : return 0; //quit
+        	}
+        	if (!pause)
+        	{
+				DAC_UpdateValue ( LPC_DAC,(uint32_t)(sound_8k[cnt]));
+				Timer0_us_Wait(delay);
+        	}
         }
     }
 
     return 0 ;
 }
+
+
 
 void check_failed(uint8_t *file, uint32_t line)
 {
